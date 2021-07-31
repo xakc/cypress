@@ -1,9 +1,0 @@
-
-===
-geting only visible html els 
-=> cy.get('.product:visible').should('have.length',4);
-
-===
-use parent:: child func
-	parent div =      childs divs	
-=> cy.get('product').find('product').should('have.length',4);

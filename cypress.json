@@ -1,1 +1,9 @@
-{}
+{
+  "defaultCommandTimeout": 8000,
+  "pageLoadTimeout": 30000,
+  "reporter": "mochawesome",
+  "env": {
+    "url": "https://localhost.freshfoodonline.com"
+  },
+  "projectId": "a5zbka"
+}
