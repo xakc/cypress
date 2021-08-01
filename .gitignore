@@ -2,3 +2,5 @@ node_modules
 cypress/integration/examples
 examples
 videos
+.idea
+idea

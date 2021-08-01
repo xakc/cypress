@@ -1,0 +1,9 @@
+image:
+name: cypress/included:6.4.0
+entrypoint: [""]
+
+test: 
+  stage: test
+  script:
+    - npm install
+    - npm run trigger-regressionTests
