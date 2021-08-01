@@ -1,9 +1,13 @@
 {
   "defaultCommandTimeout": 8000,
-  "pageLoadTimeout": 30000,
+  "chromeWebSecurity": false,
   "reporter": "mochawesome",
   "env": {
-    "url": "https://localhost.freshfoodonline.com"
+    "url": "https://rahulshettyacademy.com"
   },
-  "projectId": "a5zbka"
+
+  "retries": {
+    "runMode": 1
+  },
+  "projectId": "y2ejay"
 }

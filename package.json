@@ -1,24 +1,33 @@
 {
-  "name": "automation",
+  "name": "cypressautomation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "node_modules\\.bin\\cypress run",
-    "headTest":"npm run test -- --headed",
-    "chromeTest":"npm run test -- --browser chrome",
-    "recordDashBoardTest":"npm run test -- --record --key fa423514-5a84-42a7-b6a0-b5e7191bba12 --reporter mochawesome",
-    "GreenKartTest" : "npm run test -- --spec \\\"cypress/integration/FreshFoodOnline/*\\\""
-
-
-
-
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashboard": "npm run test -- --record --key 2f239fc2-3725-4348-b527-30ac89380a12",
+    "GreenKartTest": "npm run test -- --spec \"cypress/integration/GreenKart/*\""
   },
-  "author": "Some Great Authour",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "author": "N3qa",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^3.4.0",
-    "mocha": "^5.2.0",
-    "mochawesome": "^4.0.1"
-  }
+    "cypress": "^8.1.0",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "dependencies": {}
 }
